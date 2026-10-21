@@ -1,14 +1,14 @@
 # Deposit Wars — 唯一项目状态源
 
-version: 0.8
+version: 0.9
 date: 2026-10-22
-status: G2_TASK-004_DONE_WAITING_CEO_G3
-current_stage: G2 单房间可玩原型（CEO 已批准）
-primary_owner: 项目经理 / 调度官（等待 CEO 决议）
+status: G2_TASK-005_DONE_WAITING_CEO_ART_DIRECTION
+current_stage: G2 已验收；首关视觉审核已交付，等待 CEO 定调（G3 未批准）
+primary_owner: 项目经理 / 调度官（等待 CEO 美术与玩法审核）
 orchestrator: 项目经理 / 工作流调度官
 ceo_approval_required: true
-current_task: TASK-004 DONE (M1/M2/M3 Quality Gate ACCEPT)
-checkpoint: artifacts/handoffs/TASK-004-M3.md
+current_task: TASK-005 DONE (视觉材料 Quality Gate ACCEPT；CEO 选画风待定)
+checkpoint: artifacts/handoffs/TASK-005.md
 
 ## 已确认（来自 CEO 当前方向）
 - V1: 面向海外年轻租客/留学生的 2D 荒诞租房找茬互动小游戏。
@@ -17,6 +17,7 @@ checkpoint: artifacts/handoffs/TASK-004-M3.md
 - 候选平台: CrazyGames / Poki，需查实时平台规则和商业可行性。
 - G2 技术: CEO 已批准 Phaser 3 + TypeScript + Vite；本地原型及构建已运行。
 - 3D Steam 模拟器: 仅未来衍生方向，不进入 V1 范围。
+- V1 首发内容规划目标：6–8 个房间、30–40 个不同可玩事件，含 G2 Sunny Side Studio；首关美术与玩法经 CEO 审核后才制定完整扩展计划，本轮不批量制作。
 - 8 职能角色：产品经理、游戏策划、数据分析师、发行运营、程序员、美术、QA、项目经理/调度官。
 
 ## 待验证（不可当作事实）
@@ -35,9 +36,10 @@ checkpoint: artifacts/handoffs/TASK-004-M3.md
 - 2026-10-22 CEO 批准 G1→G2 并启动 TASK-004；使用 Phaser + TypeScript + Vite 实现单房间首关，M1→M2→M3 可在 G2 内连续推进。G3、发布、付费服务/素材未获授权。
 - TASK-004 的 M1/M2/M3 已由 Quality Gate ACCEPT，完成固定剖面一间房、五项互动与证据反击、Phone、押金结算、引导/提示/补救、本地匿名事件。TypeScript 检查、4 项单测、Vite 构建、Chrome/Edge 桌面与触屏模拟完整通关通过；物理手机、Safari/Firefox、玩家试玩和真实加载时间仍未验证。见 `artifacts/management/QUALITY_GATE_TASK-004.md`。
 - 本地 Git 仓库于 G2 初始化，原型与验收基线提交为 `5c10475`；依赖、构建和截图目录按 `.gitignore` 排除。
+- 2026-10-22 CEO 确定 V1 规划目标 6–8 房间、30–40 事件，并要求 TASK-005 首关美术审核先行。美术设计师为 DRI，程序员仅协助采集。已保存本轮 Chrome 实机桌面/手机模拟截图和三套 AI 风格概念图；现有项目无独立正式美术资源。视觉报告、素材清单、成本假设见 `artifacts/art/`。Quality Gate 对审核材料 ACCEPT，CEO 尚未选择画风或批准扩展/G3。
 
 ## 下一条动作与恢复
-当前停在 G2，等待 CEO 决定是否进入 G3 探索性试玩。收到“继续项目”先读本文件、`artifacts/handoffs/TASK-004-M3.md`、`artifacts/management/CEO_BRIEF.md`；TASK-001/002/003/004 已验收，无需重做。G3、正式发布、付费服务/素材须相应 CEO 授权。
+当前停在 G2 后视觉审核，等待 CEO 选择 A/B/C 画风并评价首关玩法；然后才可按 CEO 指令制定 V1 扩展计划。收到“继续项目”先读本文件、`artifacts/handoffs/TASK-005.md` 和 `artifacts/art/TASK-005_VISUAL_REVIEW.md`；TASK-001/002/003/004/005 已验收，无需重做。G3、批量资源制作、正式发布、付费服务/素材须相应 CEO 授权。
 
 ## 决策日志索引
 见 artifacts/management/DECISIONS.md。未列入“已确认”的方案不得表述为正式批准。
