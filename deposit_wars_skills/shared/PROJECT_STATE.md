@@ -1,6 +1,6 @@
 # Deposit Wars — 唯一项目状态源
 
-version: 0.7
+version: 0.8
 date: 2026-10-22
 status: G2_TASK-004_DONE_WAITING_CEO_G3
 current_stage: G2 单房间可玩原型（CEO 已批准）
@@ -34,6 +34,7 @@ checkpoint: artifacts/handoffs/TASK-004-M3.md
 - TASK-003 已完成 G1 静态设计并经 Quality Gate ACCEPT（返工 0/3）。首关选 RC-038/039/040/042/037，固定剖面 2D 房间、五缺陷、一支 inspection phone；五张证据卡反击五项虚构扣款。RC-044 源报道实际是房产销售，故未入首关。设计文件在 `artifacts/design/`，美术/工程/试玩预评见相应文件；未有玩家实测或技术 POC。
 - 2026-10-22 CEO 批准 G1→G2 并启动 TASK-004；使用 Phaser + TypeScript + Vite 实现单房间首关，M1→M2→M3 可在 G2 内连续推进。G3、发布、付费服务/素材未获授权。
 - TASK-004 的 M1/M2/M3 已由 Quality Gate ACCEPT，完成固定剖面一间房、五项互动与证据反击、Phone、押金结算、引导/提示/补救、本地匿名事件。TypeScript 检查、4 项单测、Vite 构建、Chrome/Edge 桌面与触屏模拟完整通关通过；物理手机、Safari/Firefox、玩家试玩和真实加载时间仍未验证。见 `artifacts/management/QUALITY_GATE_TASK-004.md`。
+- 本地 Git 仓库于 G2 初始化，原型与验收基线提交为 `5c10475`；依赖、构建和截图目录按 `.gitignore` 排除。
 
 ## 下一条动作与恢复
 当前停在 G2，等待 CEO 决定是否进入 G3 探索性试玩。收到“继续项目”先读本文件、`artifacts/handoffs/TASK-004-M3.md`、`artifacts/management/CEO_BRIEF.md`；TASK-001/002/003/004 已验收，无需重做。G3、正式发布、付费服务/素材须相应 CEO 授权。
