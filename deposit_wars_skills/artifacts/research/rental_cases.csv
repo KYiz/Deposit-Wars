@@ -1,0 +1,57 @@
+id,platform,country,theme,title,summary,source_url,source_type,verification_status,absurdity,visual_potential,interaction_potential,adaptation,checked_at
+RC-001,Reddit,英国,押金纠纷,过期清洁扣款,租客称房东未向押金计划提交证据却继续提出清洁扣款,https://www.reddit.com/r/LegalAdviceUK/comments/1vqpf5v/england_landlord_is_requesting_a_deduction_to/,当事人自述,仅自述未独立核实,3,2,4,对照入住清单与扣款邮件,2026-10-22
+RC-002,Reddit,英国,黑心房东,老鼠花园和墙外裂缝,租客称房东要求花园与洗衣机扣款且浴室霉斑源于外墙裂缝,https://www.reddit.com/r/LegalAdviceUK/comments/1o746c5,当事人自述,仅自述未独立核实,4,5,4,找裂缝和进水痕迹并比对交接报告,2026-10-22
+RC-003,Reddit,英国,押金纠纷,两块地毯全换,租客称房东索要超过押金的清洁重装修和两间卧室地毯费用,https://www.reddit.com/r/LegalAdviceUK/comments/1wircy4/landlord_wants_full_1875_deposit_plus_another/,当事人自述,仅自述未独立核实,4,4,5,逐项对照验房记录找只需清洁的地毯,2026-10-22
+RC-004,Reddit,英国,海外留学租房,学生合租被索赔霉菌,六名大学生称房东除扣押金还索赔霉菌和多件原已损坏设备,https://www.reddit.com/r/LegalAdviceUK/comments/oxzcxl,当事人自述,仅自述未独立核实,4,5,5,用入住照片和维修邮件反驳多项指控,2026-10-22
+RC-005,Reddit,英国,押金纠纷,清洁费三次缩水,租客称房东清洁索赔从195英镑降至48英镑并提供入住灰尘记录,https://www.reddit.com/r/LegalAdviceUK/comments/1k181rb,当事人自述,仅自述未独立核实,3,3,5,从入住房况图中找原有灰尘,2026-10-22
+RC-006,Reddit,英国,押金纠纷,房东亲自打扫四小时,租客称房东要扣亲自清洁费用并在更新中称押金最终全退,https://www.reddit.com/r/LegalAdviceUK/comments/v1k2lc,当事人自述,仅自述未独立核实,3,3,4,核对清洁收据与前后照片,2026-10-22
+RC-007,Reddit,英国,押金纠纷,口香糖维修账单,租客称房东列出大额维修费并包括其否认存在的口香糖清理,https://www.reddit.com/r/LegalAdviceUK/comments/ql7m0e,当事人自述,仅自述未独立核实,5,4,5,对照照片寻找虚构损伤项目,2026-10-22
+RC-008,Reddit,英国,押金纠纷,房东称踢脚线有灰,租客称代理拿少量踢脚线灰尘照片要求近500英镑清洁费,https://www.reddit.com/r/LegalAdviceUK/comments/1enwfi5,当事人自述,仅自述未独立核实,4,4,5,放大照片核对灰尘与费用比例,2026-10-22
+RC-009,Reddit,英国,押金纠纷,新租客获告知可忽略条款,租客称房东依据专业清洁条款索赔而新租客被告知同条款可忽略,https://www.reddit.com/r/LegalAdviceUK/comments/wlxlg0,当事人自述,仅自述未独立核实,4,2,5,比较两版租约及交接清单,2026-10-22
+RC-010,Reddit,英国,押金纠纷,外墙砖被指香烟烫坏,租客称房东以室内气味及外墙砖受损等理由扣押金,https://www.reddit.com/r/LegalAdviceUK/comments/x47sc2,当事人自述,仅自述未独立核实,4,4,4,检查外墙纹理与原始照片,2026-10-22
+RC-011,Reddit,未知,奇怪室友,冰箱里六盒奶酪,发帖者称室友不断购买食品并任由蔬菜和乳酪在冰箱霉变,https://www.reddit.com/r/badroommates/comments/1s6ib63/my_roommate_keeps_wasting_food_by_letting_it_rot/,当事人自述,仅自述未独立核实,4,5,4,翻冰箱找霉变线索并记录责任,2026-10-22
+RC-012,Reddit,未知,奇怪室友,房东室友十五盒霉饭,发帖者称兼任房东的室友留下约十五盒变质食品,https://www.reddit.com/r/badroommates/comments/1s7kcb1/roommate_is_my_landlord/,当事人自述,仅自述未独立核实,5,5,4,循气味找冰箱而非垃圾桶,2026-10-22
+RC-013,Reddit,未知,恶毒房客,室友卖了他人家具,发帖者称搬离的室友卖掉前室友留下的共享家具,https://www.reddit.com/r/badroommates/comments/1nuwggu/my_roommate_sold_furniture_that_wasnt_even_hers/,当事人自述,仅自述未独立核实,4,5,5,比较旧房间照片与出售清单,2026-10-22
+RC-014,Reddit,英国,奇怪室友,冰箱里一周的鱼咖喱,发帖者称合租室友长期不清理半吃完的鱼咖喱,https://www.reddit.com/r/badroommates/comments/1ogervd/roommate_wont_clean_his_old_rotting_food_from_the/,当事人自述,仅自述未独立核实,4,5,3,发现锅内变质物并查便条时间,2026-10-22
+RC-015,Reddit,未知,奇怪室友,客厅家具被搬进卧室,发帖者称室友反复把其绿植和边桌搬进自己的房间,https://www.reddit.com/r/badroommates/comments/1562v53/roommate_taking_my_decoration_and_small_furniture/,当事人自述,仅自述未独立核实,4,5,5,凭物品轮廓和旧照片找失踪家具,2026-10-22
+RC-016,Reddit,未知,奇怪室友,冰箱刚要收走却买更多食物,发帖者称宣布收走自有冰箱后室友仍往里增添食物,https://www.reddit.com/r/badroommates/comments/1ns8845,当事人自述,仅自述未独立核实,4,4,4,核对通知时间和新增食品标签,2026-10-22
+RC-017,Reddit,未知,奇怪室友,烂食物被推说属于别人,发帖者称室友让自购食品腐烂后称以为是别人的,https://www.reddit.com/r/badroommates/comments/1aj6mp0,当事人自述,仅自述未独立核实,3,4,5,利用购物票据和容器标签辨归属,2026-10-22
+RC-018,Reddit,未知,恶毒房客,室友搬出前砸电视,发帖者称偷东西的寄宿房客离开前砸坏借用的电视,https://www.reddit.com/r/badroommates/comments/1bj3cmz,当事人自述,仅自述未独立核实,4,5,4,用碎片和旧物清单核查损坏,2026-10-22
+RC-019,Reddit,未知,奇怪室友,把他人冷冻食物放在冰箱顶,发帖者称回家发现自己冷冻食品被室友移到冰箱上,https://www.reddit.com/r/badroommates/comments/1rezt6f/roommate_ruined_my_food/,当事人自述,仅自述未独立核实,3,4,4,比对冷冻层空位与食品融化痕迹,2026-10-22
+RC-020,Reddit,美国,黑心房东,墙面霉斑被刷漆盖住,新泽西租客称房东刷漆遮住霉斑但墙背面仍可见,https://www.reddit.com/r/Tenant/comments/1olpoeq,当事人自述,仅自述未独立核实,5,5,5,翻到墙背面拍证据并测潮湿,2026-10-22
+RC-021,Reddit,未知,黑心房东,漏水封墙后霉菌再生,租客称多次管道破裂后墙面未干就封闭并随后被涂漆,https://www.reddit.com/r/Tenant/comments/1clu07z,当事人自述,仅自述未独立核实,5,5,5,查漏水记录和湿墙测量,2026-10-22
+RC-022,Reddit,未知,奇葩房间,插座连孔一起刷漆,发帖者展示其所称房东刷漆覆盖的墙上插座,https://www.reddit.com/r/mildlyinfuriating/comments/1c6hgja,公开图帖,仅图帖未独立核实,4,5,4,发现插孔涂层并检查可用性,2026-10-22
+RC-023,Reddit,未知,奇葩房间,新装修浴室疑似旧霉,新入住者称新刷漆的浴室出现疑似旧霉痕迹,https://www.reddit.com/r/MoldlyInteresting/comments/1ql2n3f/did_my_landlord_paint_over_the_mold/,当事人自述,仅自述且霉菌类型未核,3,5,4,在新漆边缘找旧潮痕并拍照,2026-10-22
+RC-024,mydeposits,英国,押金纠纷,房东失联押金未退,押金保护机构案例称房东未回应租客及机构追索最终押金判归租客,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-unable-to-contact-landlord-dispute/,机构裁决摘要,机构案例可核,3,2,4,整理联络时间线和押金凭证,2026-10-22
+RC-025,mydeposits,英国,押金纠纷,开窗盗窃后的门损坏,机构案例记载入室者由开窗进入并破坏门且双方争窗是否锁稳,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-burglary-dispute/,机构裁决摘要,机构案例可核,4,5,5,检查窗锁位置与门破损路径,2026-10-22
+RC-026,mydeposits,英国,押金纠纷,钥匙未还要换锁,机构案例记载租客仍持钥匙并争议换锁及退房检查费用,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-locks-dispute/,机构裁决摘要,机构案例可核,3,4,5,查钥匙交接与锁匠发票,2026-10-22
+RC-027,mydeposits,英国,恶毒房客,未经许可把白墙刷成蓝色,机构案例记载租客称获口头许可而退租时墙色和漆面引起索赔,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-redecoration-fair-wear-and-tear/,机构裁决摘要,机构案例可核,4,5,5,用入住照片和许可邮件核房间颜色,2026-10-22
+RC-028,mydeposits,英国,押金纠纷,模糊验房表与冰箱裂缝,机构案例记载地毯污渍可部分扣费而冰箱抽屉旧裂缝证据不足,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-carpet-cleaning-damages-importance-of-inventories/,机构裁决摘要,机构案例可核,4,5,5,放大入住图对比抽屉裂缝和桌面划痕,2026-10-22
+RC-029,mydeposits,英国,押金纠纷,床虱连床一起索赔,机构案例记载房东索要除虫和床架更换费用而租客否认致害,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-pest-infestation/,机构裁决摘要,机构案例可核,4,5,4,查初次发现时间与虫害报告,2026-10-22
+RC-030,mydeposits,英国,恶毒房客,短期代养犬留下痕迹,机构案例记载租客称只短期代养狗但检查记录和地毯痕迹引起争议,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-pets-replacement-carpet-cleaning/,机构裁决摘要,机构案例可核,4,5,5,寻找狗碗毛发和检查日期,2026-10-22
+RC-031,mydeposits,英国,恶毒房客,圣诞离家水管冻裂,机构案例记载租客假期离家后水管冻裂并淹坏地板和洗衣机,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-frozen-pipe-dispute/,机构裁决摘要,机构案例可核,4,5,5,查暖气设置和警示邮件时间,2026-10-22
+RC-032,mydeposits,英国,恶毒房客,脏厨房与蟑螂争因,机构案例记载租客和代理争论蟑螂来源且检查记录与承包商报告成为证据,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-cockroach-infestation-and-cleaning-responsibilities/,机构裁决摘要,机构案例可核,4,5,5,在厨房找食物残渣与巡查日志,2026-10-22
+RC-033,mydeposits,英国,押金纠纷,猫尿味遇潮才出现,机构案例记载地毯干燥时异味较弱但受潮后再次出现,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-carpet-cleaning/,机构裁决摘要,机构案例可核,5,5,5,湿度检查揭示隐藏异味来源,2026-10-22
+RC-034,mydeposits,英国,恶毒房客,吸烟味只在几间房,机构案例记载房东要全屋粉刷而退租证据仅显示部分房间受烟影响,https://www.mydeposits.co.uk/content-hub/adjudication-case-study-smoking/,机构裁决摘要,机构案例可核,3,4,5,标出有烟渍的房间反驳全屋费用,2026-10-22
+RC-035,mydeposits,英国,押金纠纷,修锅炉而停止付租,机构案例记载租客因锅炉及电路故障提前离开并停止缴租引发争议,https://www.mydeposits.co.uk/content-hub/resolution-case-study-withholding-rent-for-property-repairs/,机构裁决摘要,机构案例可核,3,4,4,按时间线检查报修与退租文件,2026-10-22
+RC-036,TDS,英国,押金纠纷,秋叶堵住排水沟,押金机构案例记载房东要求租客支付清理落叶堵塞沟槽的费用但未获支持,https://custodial.tenancydepositscheme.com/news/blog/expertview-leaf-it-out-autumn-adjudication-case-study/,机构裁决摘要,机构案例可核,5,5,5,查季节变化及租约中室外责任范围,2026-10-22
+RC-037,TDS,英国,押金纠纷,一支未点燃的蜡烛罚款,押金机构案例记载房东因房中有未点燃蜡烛主张罚款而无损失证据,https://www.tenancydepositscheme.com/app/uploads/2025/04/Case_Study_The_Candle_clause_April_2025_v1.pdf,机构裁决摘要,机构案例可核,5,5,5,检查烛芯未燃与合同罚款条款,2026-10-22
+RC-038,ABC,澳大利亚,奇葩房间,厕所与厨房同处一室,ABC 报道阿德莱德招租单间把卫生设施放在厨房旁且没有炉灶,https://www.abc.net.au/news/2022-06-28/south-australian-building-codes-apartment-with-loo-in-kitchen/101190682,媒体实地报道,报道可核,5,5,5,环视房间发现厕所玻璃间与缺失灶台,2026-10-22
+RC-039,ABC,澳大利亚,黑心房东,浴室长出蘑菇,ABC 采访租客称长期霉变后浴室墙角长出蘑菇,https://www.abc.net.au/news/2017-02-21/australians-share-their-rental-horror-stories/8277394,媒体采访,报道可核但细节为受访者自述,5,5,4,循霉斑和漏水寻找蘑菇线索,2026-10-22
+RC-040,ABC,澳大利亚,奇葩房间,签完租约发现房东仍住着,ABC 同篇采访记载一名租客称签约后才发现房主仍住在房内,https://www.abc.net.au/news/2017-02-21/australians-share-their-rental-horror-stories/8277394,媒体采访,报道可核但细节为受访者自述,5,5,5,从额外牙刷衣物与门锁找隐藏住户,2026-10-22
+RC-041,ABC,澳大利亚,黑心房东,污水回流到厨房,ABC 同篇采访记载租客称多个排水口堵塞后污水从浴室及厨房回流,https://www.abc.net.au/news/2017-02-21/australians-share-their-rental-horror-stories/8277394,媒体采访,报道可核但细节为受访者自述,5,5,5,逐个打开水口追查堵塞路径,2026-10-22
+RC-042,ABC,澳大利亚,奇葩房间,白天不能出入的公寓,ABC 报道幼儿园楼上房源的唯一入口穿过园所且招租规则限制白天出入,https://www.abc.net.au/news/2024-09-19/sydney-rental-rules-tenant-has-no-access-during-day/104364382,媒体核对招租广告,报道可核,5,5,5,查看房源平面图与门禁时刻表,2026-10-22
+RC-043,ABC,澳大利亚,黑心房东,热成像显示湿地毯,ABC 报道租客房内漏水和反复霉菌且记者记录热像检查湿地毯,https://www.abc.net.au/news/2023-10-01/tiktoker-launches-renters-property-database-thedrum/102922346,媒体采访与记录,报道可核,4,5,5,用热像工具找渗水位置并拍照,2026-10-22
+RC-044,ABC,澳大利亚,奇葩房间,房源照片与现实污渍不符,ABC 报道悉尼租屋广告中的整洁照片与现场厨房污渍不符,https://www.abc.net.au/news/2019-11-14/sydney-real-estate-agency-investigated-over-inaccurate-listing/11703152,媒体调查报道,报道可核,4,5,5,逐角度比较宣传照与现实物件,2026-10-22
+RC-045,ABC,澳大利亚,黑心房东,下沉房屋刚过检查,ABC 报道昆士兰租客多年反映房屋下沉却在宣布不宜居前数月通过检查,https://www.abc.net.au/news/2024-09-28/housing-standards-eviction-rental-tribunal/104371974,媒体报道与裁决,报道可核,4,5,5,找地板坡度和旧检查矛盾,2026-10-22
+RC-046,ABC,澳大利亚,黑心房东,室内摄像头引隐私忧虑,ABC 报道租客担忧屋内摄像头拍摄家庭活动且代理拒绝移除,https://www.abc.net.au/news/2023-08-10/qld-rental-security-cameras-tenants-agents-family/102700822,媒体采访,报道可核但拍摄事实未完全确定,4,5,5,找镜头朝向与设备说明而不复制真实隐私细节,2026-10-22
+RC-047,抖音,中国,押金纠纷,房东称无论何时退租都不退押,公开短视频描述提前通知退租仍被告知押金用于补下一任空窗,https://www.douyin.com/video/7355713773153340687,公开视频,仅视频叙述未独立核实,3,2,4,核对通知与房东回复的时间线,2026-10-22
+RC-048,抖音,中国,押金纠纷,油烟和家具折旧扣五千,公开视频自述退租后房东以厨房油烟和家具磨损主张大额押金扣除,https://www.douyin.com/video/7215869842530880829,公开视频自述,仅自述未独立核实,4,4,5,用入住照片和清洁票据逐项反驳,2026-10-22
+RC-049,Reddit,英国,海外留学租房,学生房多处霉菌无人修,学生租客称私人学生房浴室与卧室多处霉菌而业主未处理,https://www.reddit.com/r/UniUK/comments/1kz9iw5,当事人自述,仅自述未独立核实,3,5,4,标记各房间霉斑与报修日期,2026-10-22
+RC-050,Reddit,英国,海外留学租房,床垫小污渍索价,学生称住宿方对床垫小污渍收费140英镑且未说明清洁或更换,https://www.reddit.com/r/UniUK/comments/1v3k5dd/my_uni_accom_is_taking_the_mick/,当事人自述,仅自述未独立核实,4,5,5,放大污渍与对照收费单和更换凭证,2026-10-22
+RC-051,Reddit,爱尔兰,海外留学租房,交押后展示另一间房,跨境找房者称付押金后被展示不同房间又被拒租且押金未退,https://www.reddit.com/r/legaladviceireland/comments/12p1407,当事人自述,仅自述未独立核实,4,5,5,比较广告照片与实地房间和付款凭证,2026-10-22
+RC-052,Reddit,爱尔兰,奇怪室友,租房却不能进客厅,看房者称合租房禁止使用客厅且还收到要求提供大量资料的邮件,https://www.reddit.com/r/ireland/comments/17gkvff,当事人自述,仅自述未独立核实,4,5,5,查房源平面图和门上禁入规则,2026-10-22
+RC-053,Reddit,英国,海外留学租房,国际学生报修霉菌无果,国际学生称自2025年末报告住处反复霉菌但住宿方未解决,https://www.reddit.com/r/LegalAdviceUK/comments/1ukj0hr/mould_in_student_accommodation_landlord_wont_do/,当事人自述,仅自述未独立核实,3,4,4,用报修时间线核霉斑是否复现,2026-10-22
+RC-054,Reddit,英国,海外留学租房,学生房柜帘皆发霉,学生租客称短暂看房未察觉入住后卧室浴室橱柜及窗帘多处霉菌,https://www.reddit.com/r/rentingUK/comments/1unlzxz/student_housing/,当事人自述,仅自述未独立核实,4,5,4,检查橱柜背面与窗帘折叠处,2026-10-22
+RC-055,Reddit,新西兰,押金纠纷,等找到新租客才退押金,新西兰租客称房东未将押金存入指定机构并称找到新租客后才退,https://www.reddit.com/r/newzealand/comments/1s6hkgw/landlord_didnt_lodge_bond/,当事人自述,仅自述未独立核实,4,2,5,查押金登记回执与房东回复,2026-10-22
+RC-056,Reddit,新西兰,押金纠纷,卖房前列近全额扣款,新西兰租客称房东卖房前用墙面小痕和旧地毯等理由拟扣大量押金,https://www.reddit.com/r/newzealand/comments/1imovo1/is_my_landlord_doing_the_right_thing/,当事人自述,仅自述未独立核实,4,5,5,对照入住清单和退房照片逐项查价,2026-10-22

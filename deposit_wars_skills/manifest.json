@@ -1,0 +1,68 @@
+{
+  "project": "Deposit Wars",
+  "version": "1.2.0",
+  "roles": [
+    {
+      "directory": "01-product-manager",
+      "name": "产品经理 Product Manager"
+    },
+    {
+      "directory": "02-game-designer",
+      "name": "游戏策划 Game Designer"
+    },
+    {
+      "directory": "03-data-analyst",
+      "name": "数据分析师 Data Analyst"
+    },
+    {
+      "directory": "04-publishing-operations",
+      "name": "发行运营 Publishing & Growth"
+    },
+    {
+      "directory": "05-engineer",
+      "name": "游戏程序员 Gameplay Engineer"
+    },
+    {
+      "directory": "06-artist",
+      "name": "美术设计师 2D Artist / UI"
+    },
+    {
+      "directory": "07-qa",
+      "name": "QA 测试 / 玩家体验 QA"
+    },
+    {
+      "directory": "08-orchestrator",
+      "name": "项目经理 / 工作流调度官 Project Orchestrator"
+    }
+  ],
+  "current_stage": "G0",
+  "count": 8,
+  "system_skills": [
+    {
+      "directory": "workflow-controller",
+      "name": "Workflow Controller"
+    },
+    {
+      "directory": "quality-gate",
+      "name": "Quality Gate"
+    },
+    {
+      "directory": "context-optimizer",
+      "name": "Context Optimizer"
+    },
+    {
+      "directory": "skill-maintainer",
+      "name": "Skill Maintainer"
+    }
+  ],
+  "system_skill_count": 4,
+  "specialist_skills": [
+    {
+      "directory": "rental-case-researcher",
+      "name": "Rental Case Researcher",
+      "invoked_by": "产品经理 Product Manager"
+    }
+  ],
+  "specialist_skill_count": 1,
+  "total_skill_count": 13
+}

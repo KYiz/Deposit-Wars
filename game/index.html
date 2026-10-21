@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173049" />
+    <title>Deposit Wars — Sunny Side Studio</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="masthead">
+        <div class="brand"><span class="brand-icon">DW</span><div><strong>DEPOSIT WARS</strong><small>Sunny Side Studio · Prototype</small></div></div>
+        <div class="ledger"><span>Deposit returned</span><strong id="deposit">$0 / $500</strong><span id="evidence-count">0 / 5 evidence</span></div>
+      </header>
+      <main>
+        <section class="brief" aria-label="Game objective">
+          <div class="chapter">INSPECTION 01 / FIVE CLAIMS</div>
+          <h1>Find the funny. Prove the truth.</h1>
+          <p id="status" role="status">The landlord wants your $500 deposit. Tap the suspicious curtain to inspect.</p>
+        </section>
+        <div class="game-viewport" id="game-viewport" aria-label="Scroll sideways on narrow screens to inspect the room">
+          <div id="game">
+            <div id="hotspots" aria-label="Room inspection spots">
+              <button class="hotspot" data-spot="D1" type="button" aria-label="Inspect the private bath curtain"></button>
+              <button class="hotspot" data-spot="D2" type="button" aria-label="Inspect the dripping shower duck"></button>
+              <button class="hotspot" data-spot="D3" type="button" aria-label="Inspect the suspicious closet"></button>
+              <button class="hotspot" data-spot="D4" type="button" aria-label="Inspect the clockwork exit"></button>
+              <button class="hotspot" data-spot="D5" type="button" aria-label="Inspect the candle desk"></button>
+            </div>
+          </div>
+        </div>
+        <div class="controls" aria-label="Game controls">
+          <button id="phone-button" type="button">▣ Inspection Phone <span id="phone-badge">0</span></button>
+          <button id="hint-button" type="button">◇ Hint</button>
+          <button id="sound-button" type="button" aria-pressed="true">♪ Sound on</button>
+          <button id="face-button" class="primary" type="button">Face landlord →</button>
+        </div>
+        <p class="microcopy">Tap a highlighted object · Compare in the phone · Match evidence to charges</p>
+      </main>
+      <div id="dialog-backdrop" class="backdrop hidden" aria-hidden="true">
+        <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+          <div class="dialog-top"><span id="dialog-kicker">INSPECTION</span><button id="close-dialog" class="plain" type="button" aria-label="Close dialog">✕</button></div>
+          <h2 id="dialog-title"></h2>
+          <div id="dialog-body"></div>
+        </section>
+      </div>
+      <footer><span>Fictional cartoon prototype · No legal advice</span><button id="export-events" type="button">Export local playtest log</button></footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
