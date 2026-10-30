@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>押金保卫战｜九种住房·找茬演示</title>
+  <link rel="stylesheet" href="src/nine-level.css">
+</head>
+<body>
+  <div class="game-shell">
+    <header class="masthead">
+      <div class="dw-mark" aria-hidden="true">D<span>W</span></div>
+      <div class="mast-title"><strong>一间好房 · 九种住法</strong><span>CASE FILE / 物品栏与现场标注 Demo</span></div>
+      <a href="offline-demo.html">旧版首关完整结算 ↗</a>
+    </header>
+    <nav class="level-nav" id="level-nav" aria-label="选择住房关卡"></nav>
+    <section class="status-line" aria-label="当前关卡">
+      <div><strong id="room-title"></strong><span id="room-type"></span></div>
+      <div class="role-toggle" role="group" aria-label="选择视角"><button id="tenant-role" type="button">租客</button><button id="landlord-role" type="button">房东</button></div>
+      <span class="progress" id="mark-progress">标注 0 / 2</span>
+    </section>
+    <div class="room-viewport"><section class="room-stage" id="room-stage" aria-label="在房间里拾取线索并标注真实问题">
+      <img class="room-art" id="room-art" alt="当前关卡房间插画">
+      <div class="problem-layer" id="problem-layer"></div>
+      <div class="item-layer" id="item-layer"></div>
+      <div class="room-toast" id="room-toast" role="status" aria-live="polite">拖动物品，正确线索会进入物品栏。</div>
+    </section></div>
+    <section class="play-bottom">
+      <div class="inventory-shell" id="inventory-shell" aria-label="固定尺寸的物品栏">
+        <div class="inventory-caption"><strong>物品栏</strong><span id="inventory-count">0 / 2</span></div>
+        <div class="inventory-slots" id="inventory-slots"></div>
+      </div>
+      <div class="play-actions"><button type="button" id="retry-level">重试本关</button><button type="button" id="next-level" disabled>下一关 →</button></div>
+    </section>
+    <p class="play-note">按住场景物件拖动或点击拾取。选中物品栏里的线索，再点击你认为有问题的现场位置进行标注；标错可以重试。九关可自由预览，后续剧情与押金结算仍在制作中。</p>
+  </div>
+  <script src="nine-level-data.js"></script>
+  <script src="src/nine-level.js"></script>
+</body>
+</html>

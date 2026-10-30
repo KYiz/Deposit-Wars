@@ -1,0 +1,46 @@
+.in-investigation .topbar{display:none}
+.investigation-wrap{max-width:1672px;margin:0 auto;padding:12px clamp(10px,2vw,28px) 0;color:#172a46}
+.investigation-brand{min-height:73px;display:flex;align-items:center;gap:22px;border-bottom:3px solid #172a46;margin-bottom:10px;white-space:nowrap}
+.investigation-logo{font-size:30px;font-weight:900;letter-spacing:-.12em;border:3px solid #172a46;border-top:0;border-left:0;padding:0 18px 0 6px;line-height:1;color:#172a46}
+.investigation-logo span{font-size:18px}
+.investigation-brand>strong{font-size:clamp(18px,2.2vw,34px);letter-spacing:.025em}
+.investigation-brand>strong b{color:#da625e}
+.investigation-demo{background:#e45d59;color:#fff9ed;border-radius:12px;padding:8px 16px;font-size:16px;font-weight:900;letter-spacing:.05em}
+.investigation-tagline{margin-left:auto;border-left:2px solid #172a46;padding-left:24px;font-size:clamp(11px,1.2vw,18px);font-weight:800}
+.investigation-panel{border:3px solid #172a46;border-radius:9px;overflow:hidden;background:#f6efe2}
+.investigation-status{min-height:82px;display:flex;align-items:center;gap:18px;padding:12px 17px;background:#f7f1e7;border-bottom:3px solid #172a46;font-weight:800}
+.status-role,.status-room{padding:13px 17px;border-radius:8px;white-space:nowrap;font-size:clamp(13px,1.25vw,18px)}
+.status-role{background:#2a7e65;color:#fff;border:2px solid #255f50}
+.investigation-status.landlord .status-role{background:#b47647;border-color:#8d5836}
+.status-room{border:2px solid #dfd6c8;background:#f6f0e7}
+.status-progress{display:flex;align-items:center;gap:9px;white-space:nowrap;padding:0 17px 0 4px;border-right:2px solid #c0b8ab;font-size:clamp(13px,1.2vw,17px)}
+.status-progress strong{font-size:21px}
+.progress-dots{display:flex;gap:8px;margin-left:6px}
+.progress-dots i{display:block;width:20px;height:20px;border:2px solid #c2b8aa;border-radius:50%;background:transparent}
+.progress-dots i.done{background:#2a7e65;border-color:#2a7e65;box-shadow:inset 0 0 0 3px #f8f0e2}
+.investigation-status.landlord .progress-dots i.done{background:#b47647;border-color:#b47647}
+.status-objective{display:flex;gap:15px;align-items:center;min-width:0;font-size:clamp(12px,1.2vw,17px)}
+.status-objective>span{font-size:28px;line-height:1}
+.status-objective strong{display:block}
+.status-objective p{margin:2px 0 0;line-height:1.3;font-weight:600}
+.investigation-wrap .scene{aspect-ratio:1672/710;position:relative;overflow:hidden;background:#bd8e68}
+.investigation-wrap .scene::after{display:none}
+.investigation-art{position:absolute;left:0;top:-25.35%;width:100%;height:132.535%;display:block;pointer-events:none}
+.investigation-wrap .spot{left:auto;top:auto;width:66px;height:66px;transform:translate(-50%,-50%);display:grid;place-items:center;z-index:3}
+.investigation-wrap .spot::before{display:none}
+.investigation-wrap .spot span,.investigation-wrap .spot-curtain span,.investigation-wrap .spot-wall span,.investigation-wrap .spot-door span{width:54px;height:54px;transform:none!important;background:#162c4b;color:#fff;border:3px solid #f9f1e5;box-shadow:0 0 0 2px #162c4b;font-size:18px}
+.investigation-wrap .spot:hover span,.investigation-wrap .spot:focus-visible span,.investigation-wrap .spot.hinted span{background:#df625d;box-shadow:0 0 0 5px #fff4df}
+.investigation-wrap .spot.solved span{background:#2a7e65;box-shadow:0 0 0 3px #f7f1e5}
+.investigation-wrap .spot.solved span::after{content:'✓';position:absolute;right:-9px;bottom:-8px;font-size:15px;background:#fff;color:#2a7e65;border-radius:50%;padding:1px 4px}
+.investigation-wrap .spot-curtain{left:19.2%;top:35%}
+.investigation-wrap .spot-wall{left:55.2%;top:36%}
+.investigation-wrap .spot-door{left:93.3%;top:44.5%}
+.investigation-action{position:absolute;bottom:3%;z-index:3;min-height:54px;border:2px solid #f7f1e5;border-radius:9px;padding:10px 18px;color:#fff;font-size:18px;font-weight:900;box-shadow:0 3px 0 #172a46;white-space:nowrap}
+.investigation-action.hint{left:1.3%;min-width:215px;background:#e65e5c}
+.investigation-action.switch{right:1.3%;min-width:180px;background:#172e50}
+.investigation-action:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.investigation-action:focus-visible{outline:4px solid #fff;outline-offset:2px}
+.mobile-actions{display:none}
+.investigation-footnote{max-width:1672px;margin:8px auto 0;padding:0 clamp(10px,2vw,28px) 18px;font-size:12px;font-weight:700;color:#516172}
+@media(max-width:1100px){.investigation-brand{gap:13px}.investigation-tagline{display:none}.investigation-status{gap:8px;padding:9px}.status-role,.status-room{padding:10px 12px}.status-progress{padding:0 9px 0 2px}.status-objective{gap:7px}.progress-dots i{width:15px;height:15px}}
+@media(max-width:700px){.investigation-wrap{padding:8px 8px 0}.investigation-brand{min-height:52px;gap:8px;margin-bottom:7px}.investigation-logo{font-size:19px;padding-right:8px}.investigation-logo span{font-size:12px}.investigation-brand>strong{font-size:16px}.investigation-demo{padding:5px 7px;font-size:9px;border-radius:6px}.investigation-status{display:grid;grid-template-columns:1fr 1fr;gap:6px;min-height:0;padding:8px}.status-role,.status-room{font-size:11px;padding:8px 6px;text-align:center}.status-progress{border:0;font-size:12px;padding:4px 2px;gap:5px}.status-progress strong{font-size:15px}.progress-dots{gap:3px;margin-left:2px}.progress-dots i{width:12px;height:12px}.status-objective{font-size:11px;gap:5px}.status-objective>span{font-size:20px}.investigation-wrap .scene{aspect-ratio:1672/630}.investigation-art{height:149.36%;top:-28.57%}.investigation-wrap .spot{width:48px;height:48px}.investigation-wrap .spot span,.investigation-wrap .spot-curtain span,.investigation-wrap .spot-wall span,.investigation-wrap .spot-door span{width:32px;height:32px;font-size:12px}.investigation-wrap .spot-curtain{top:39%}.investigation-wrap .spot-wall{top:40%}.investigation-wrap .spot-door{top:50%}.investigation-action{display:none}.mobile-actions{display:flex;gap:8px;padding:9px;background:#f7f1e5}.mobile-actions button{flex:1;min-height:48px;border:2px solid #172a46;border-radius:7px;background:#e65e5c;color:#fff;font-size:12px;font-weight:900}.mobile-actions button+button{background:#172e50}.investigation-footnote{font-size:11px}}

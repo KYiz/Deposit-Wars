@@ -1,0 +1,35 @@
+/* Investigation inserts share the warm case-file palette and ink outlines. */
+.investigation-brand .investigation-logo{width:47px;height:47px;flex:none;border:0;border-radius:50%;padding:0;background:#24243f;color:#f3e6ca;display:flex;align-items:center;justify-content:center;gap:1px;transform:rotate(-12deg);font-size:17px;letter-spacing:-.1em}
+.investigation-brand .investigation-logo span{font-size:17px}
+.investigation-brand .investigation-logo span:first-child{color:#f1bb7d}
+.investigation-wordmark{font-size:12px;font-weight:900;line-height:1;letter-spacing:.07em;border-right:2px solid #172a46;padding-right:20px}
+@media(max-width:700px){.investigation-brand .investigation-logo{width:30px;height:30px}.investigation-brand .investigation-logo span{font-size:12px}.investigation-wordmark{font-size:7px;padding-right:6px}}
+.modal{background:#172a46bd}
+.modal-card{width:min(610px,100%);background:linear-gradient(145deg,#fff8e9,#f4dfbb);border:3px solid #172a46;border-radius:8px;box-shadow:8px 8px 0 #b97e58;position:relative}
+.modal-card::before{content:'CASE FILE · 海景公寓 301';display:block;padding:5px 10px;width:max-content;max-width:80%;background:#fff9eb;border:1px solid #d7bea2;color:#172a46;transform:rotate(-2deg);font-size:10px;font-weight:900;letter-spacing:.08em}
+.modal-card h2{color:#172a46}
+.puzzle-stage{margin:14px 0;border:2px solid #172a46;border-radius:9px;overflow:hidden;background:#e9c396;box-shadow:4px 4px 0 #bf9d78}
+.puzzle-scene{min-height:155px;padding:14px 18px;display:grid;grid-template-columns:90px 1fr;grid-template-rows:20px 1fr;align-items:center;gap:2px 14px;background-image:linear-gradient(90deg,#f8d9aaee,#f8d9aab8 45%,#f8d9aa33),url('/investigation-reference.png');background-size:auto,1450px auto;background-repeat:no-repeat;position:relative}
+.puzzle-stage[data-puzzle="D1"] .puzzle-scene{background-position:center,12% 45%}
+.puzzle-stage[data-puzzle="D2"] .puzzle-scene{background-position:center,57% 47%}
+.puzzle-stage[data-puzzle="D3"] .puzzle-scene{background-position:center,40% 48%}
+.puzzle-stage[data-puzzle="D4"] .puzzle-scene{background-position:center,100% 50%}
+.puzzle-stage[data-puzzle="D5"] .puzzle-scene{background-position:center,61% 78%}
+.puzzle-scene::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 34px,#71462e0b 35px 37px);pointer-events:none}
+.puzzle-index{grid-column:1/-1;color:#5e3f36;font-size:10px;font-weight:900;letter-spacing:.12em}
+.puzzle-scene-icon{grid-row:2;font-family:Georgia,serif;font-size:80px;line-height:1;text-align:center;color:#173952;text-shadow:3px 3px 0 #f6d4a1}
+.puzzle-scene strong{grid-row:2;font-size:18px;line-height:1.35;color:#172a46;z-index:1;background:#fff3d9d9;border-left:4px solid #df625d;padding:9px 11px}
+.puzzle-drag-row{display:grid;grid-template-columns:1fr 42px 1fr;align-items:center;gap:8px;padding:15px;background:#fff4dc}
+.puzzle-object,.puzzle-target{min-height:118px;border:3px solid #172a46;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;text-align:center;position:relative}
+.puzzle-object{background:#dce9d8;box-shadow:4px 4px 0 #476e68;touch-action:none;user-select:none;cursor:grab;z-index:2}
+.puzzle-object.dragging{cursor:grabbing;box-shadow:8px 12px 16px #172a4659;transition:none}
+.puzzle-target{border-style:dashed;background:#f9dfc3;transition:background .15s,transform .15s}
+.puzzle-target.ready{background:#a7dcc3;transform:scale(1.04)}
+.puzzle-object span,.puzzle-target span{font-family:Georgia,serif;font-size:36px;line-height:1;color:#172a46}
+.puzzle-object strong,.puzzle-target strong{font-size:15px;color:#172a46}
+.puzzle-object small{font-size:10px;color:#517062;font-weight:900}
+.puzzle-trail{text-align:center;font-size:24px;color:#df625d;font-weight:900}
+.puzzle-found,.puzzle-complete{padding:12px 16px;font-size:15px;line-height:1.4;font-weight:900;color:#174b40;background:#d9edda;border-top:2px dashed #47876f}
+.puzzle-keyboard{width:100%;border:1px dashed #98795d;background:#fff8e9;padding:9px 11px;color:#4d5d63;font-size:11px;font-weight:800;text-align:center;border-radius:5px}
+.puzzle-keyboard:hover,.puzzle-keyboard:focus-visible{background:#d9edda;color:#172a46}
+@media(max-width:700px){.modal-card{max-height:95vh;padding:15px}.puzzle-scene{min-height:105px;grid-template-columns:68px 1fr}.puzzle-scene-icon{font-size:60px}.puzzle-scene strong{font-size:15px}.puzzle-drag-row{padding:10px;gap:4px;grid-template-columns:1fr 24px 1fr}.puzzle-object,.puzzle-target{min-height:103px}.puzzle-object span,.puzzle-target span{font-size:29px}.puzzle-object strong,.puzzle-target strong{font-size:12px}.puzzle-trail{font-size:14px}.puzzle-found{font-size:13px}}

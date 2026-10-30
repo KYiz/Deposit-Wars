@@ -1,0 +1,53 @@
+.status-deposit{display:grid;min-width:105px;padding-right:12px;border-right:2px solid #c0b8ab;line-height:1.2}
+.status-deposit small{font-size:10px;color:#9b6259;letter-spacing:.08em}
+.status-deposit strong{font-size:16px;white-space:nowrap}
+.investigation-wrap .spot-closet{left:42%;top:59%}
+.investigation-wrap .spot-table{left:62%;top:72%}
+.investigation-wrap .spot-door{top:44.5%}
+.investigation-wrap .spot.solved span{background:#2a7e65}
+.game-actions{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#f7f1e5;border-top:2px solid #172a46}
+.game-actions button{min-height:45px;border:2px solid #172a46;border-radius:8px;background:#fbf5e9;color:#172a46;padding:8px 13px;font-size:13px;font-weight:900;box-shadow:2px 2px 0 #172a46}
+.game-actions button:hover{background:#f8dfc2}
+.game-actions button:focus-visible{outline:3px solid #e65e5c;outline-offset:3px}
+.game-actions #phone-button{background:#d8eee6}
+.game-actions #face-button{background:#e65e5c;color:#fff;margin-right:auto}
+.game-actions #phone-count{background:#172a46;color:#fff;padding:1px 6px;border-radius:50%;margin-left:4px}
+.game-actions #sound-button,.game-actions #export-events{font-size:11px}
+.modal-card{width:min(650px,100%)}
+.modal-meta{font-size:11px;font-weight:900;letter-spacing:.13em;color:#2a7e65;margin:8px 0}
+.modal-note{font-size:13px;color:#657078}
+.detail-visual{position:relative;height:170px;background-image:url('/investigation-reference.png');background-size:850px auto;background-repeat:no-repeat;border:3px solid #172a46;border-radius:10px;overflow:hidden;margin:15px 0}
+.detail-visual::after{content:attr(data-label);position:absolute;bottom:0;left:0;right:0;background:#172a46dc;color:#fff;padding:7px 11px;font-size:12px;font-weight:900}
+.detail-visual[data-defect="D1"]{background-position:8% 44%}
+.detail-visual[data-defect="D2"]{background-position:58% 42%}
+.detail-visual[data-defect="D3"]{background-position:37% 52%}
+.detail-visual[data-defect="D4"]{background-position:100% 47%}
+.detail-visual[data-defect="D5"]{background-position:62% 84%}
+.step-button,.modal-link{display:block;width:100%;margin:11px 0;padding:13px;border:2px solid #172a46;border-radius:8px;background:#e65e5c;color:#fff;font-size:14px;font-weight:900;box-shadow:3px 3px 0 #172a46}
+.step-button:hover,.modal-link:hover{filter:brightness(1.08)}
+.modal-link.secondary{background:#f6f0e7;color:#172a46}
+.phone-panel{background:#e7f0e6;border:8px solid #172a46;border-radius:18px;padding:15px;margin:15px 0;box-shadow:4px 4px 0 #abbab0}
+.phone-top{border-bottom:2px dashed #9eb1a6;padding-bottom:8px;font-size:11px;font-weight:900;letter-spacing:.12em}
+.phone-compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.phone-compare>div{padding:12px;background:#d7e9df;border-radius:8px;min-height:85px}
+.phone-compare>div+div{background:#f5d9bd}
+.phone-compare small{display:block;font-size:10px;color:#566675;font-weight:900;letter-spacing:.1em;margin-bottom:8px}
+.phone-compare strong{font-size:15px;line-height:1.3}
+.phone-list{display:grid;gap:6px;margin:12px 0}
+.phone-list button{display:flex;justify-content:space-between;gap:8px;width:100%;border:1px solid #a8b7ac;background:#fffaf0;padding:9px;text-align:left;font-size:12px;font-weight:800}
+.phone-list button:disabled{opacity:.55}
+.feedback-strip{padding:11px 13px;background:#d7ecdd;border-left:5px solid #2a7e65;margin:11px 0;font-size:13px;font-weight:800;line-height:1.5}
+.feedback-strip.warn{background:#f8d7c9;border-color:#d46b5c}
+.charge-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:12px 0}
+.charge-grid button{min-height:52px;border:2px solid #b78866;background:#fae3c9;border-radius:7px;text-align:left;padding:8px;font-size:12px;font-weight:800;display:flex;justify-content:space-between;gap:7px}
+.charge-grid button.active{background:#edb877;border-color:#172a46}
+.charge-grid button:disabled{background:#d7ecdd;border-color:#72a78d;color:#497a65}
+.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:10px 0}
+.evidence-grid button{min-height:54px;background:#e5f2e7;border:2px solid #6d9e81;border-radius:7px;padding:8px;text-align:left;font-size:12px;font-weight:800}
+.modal-button-row{display:flex;gap:9px;margin-top:13px}
+.modal-button-row button{flex:1;border:2px solid #172a46;border-radius:7px;padding:11px;font-size:12px;font-weight:900;background:#f6f0e7}
+.modal-button-row button.primary{background:#e65e5c;color:#fff}
+.settlement{background:#172a46;color:#fff;border-radius:10px;padding:20px;text-align:center;margin:12px 0}
+.settlement strong{display:block;font-size:40px;color:#ffc987}
+.settlement small{letter-spacing:.12em;font-weight:800}
+@media(max-width:700px){.investigation-status{grid-template-columns:1fr 1fr}.status-deposit{border:0;text-align:right;padding-right:2px}.status-deposit strong{font-size:13px}.status-objective{grid-column:1/-1}.game-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:8px}.game-actions button{font-size:11px;padding:6px;min-height:43px}.game-actions #face-button{margin-right:0}.game-actions #sound-button,.game-actions #export-events{font-size:10px}.investigation-wrap .spot-closet{top:63%}.investigation-wrap .spot-table{top:79%}.investigation-wrap .spot-door{top:50%}.detail-visual{height:120px;background-size:690px auto}.phone-compare{gap:6px}.phone-compare strong{font-size:12px}}

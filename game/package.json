@@ -9,6 +9,9 @@
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "test:browser": "node tests/browser.mjs",
+    "test:perspective": "node tests/scene-play.mjs",
+    "build:offline": "pnpm build && vite build --config vite.offline.config.ts && python scripts/build-offline-demo.py",
+    "test:offline": "node tests/offline-demo.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },

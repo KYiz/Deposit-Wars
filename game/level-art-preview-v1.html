@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>押金保卫战｜六关道具美术预览</title>
+<style>
+:root{font-family:"Microsoft YaHei",sans-serif;color:#1e2d43;background:#f3eddf}*{box-sizing:border-box}body{margin:0}header{max-width:1450px;margin:auto;padding:20px 22px 12px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}header strong{font-size:22px;letter-spacing:.06em}header small{color:#a15349;font-weight:800}header a{margin-left:auto;color:#1e2d43;font-size:13px}.case-tabs{max-width:1450px;margin:0 auto 8px;padding:0 22px;display:flex;gap:7px;overflow:auto}.case-tabs button,.role-tabs button{border:1px solid #b9a88d;border-radius:7px;background:#fbf5e8;color:#20324e;padding:8px 11px;font-weight:800;white-space:nowrap;cursor:pointer}.case-tabs button[aria-selected=true],.role-tabs button[aria-pressed=true]{background:#1e3652;color:#fff7e9;border-color:#1e3652}.bar{max-width:1450px;margin:0 auto;padding:7px 22px 11px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.bar span{font-weight:900}.bar p{margin:0;color:#645a4d;font-size:13px}.role-tabs{margin-left:auto;display:flex;gap:5px}.stage{position:relative;max-width:1406px;aspect-ratio:1672/941;margin:0 auto 12px;border:3px solid #1e3652;border-radius:8px;overflow:hidden;background:#c7ad86;box-shadow:0 8px 0 #d4c1a5}.room{position:absolute;width:100%;height:100%;object-fit:fill;inset:0}.prop{position:absolute;z-index:2;border:0;background:transparent;padding:0;cursor:grab;touch-action:none;filter:drop-shadow(2px 4px 3px #25253670)}.prop img{width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none}.prop:focus-visible{outline:3px solid #f0675b}.prop.dragging{z-index:5;cursor:grabbing;filter:drop-shadow(10px 12px 7px #25253688)}.prop.found{opacity:.32}.toast{position:absolute;left:2%;bottom:2%;max-width:60%;padding:8px 12px;border-radius:5px;background:#fff2dedd;font-weight:800;font-size:clamp(12px,1.2vw,17px);pointer-events:none}.note{max-width:1406px;margin:0 auto 30px;padding:0 8px;color:#675e55;font-size:12px} @media(max-width:700px){header{padding:14px}.case-tabs,.bar{padding-left:12px;padding-right:12px}.stage{min-width:740px;margin-left:0}.viewport{overflow:auto}.toast{font-size:15px}.bar p{width:100%}}
+</style>
+</head>
+<body>
+<header><strong>一间好房 * 六份案卷</strong><small>道具美术互动预览 · 草案</small><a href="offline-demo.html">返回已可玩的首关 Demo</a></header>
+<nav class="case-tabs" id="case-tabs" aria-label="选择关卡"></nav>
+<div class="bar"><span id="level-title"></span><p id="level-subtitle"></p><div class="role-tabs"><button id="tenant" aria-pressed="true">租客视角</button><button id="landlord" aria-pressed="false">房东视角</button></div></div>
+<div class="viewport"><div class="stage" id="stage"><img class="room" id="room" alt="该关独立房间美术草案"><div class="toast" id="toast">按住画中物件拖动，看看这关的案例道具。</div></div></div>
+<p class="note">每关有独立房间与六件案例主道具 PNG。此页只预览美术图层和拖动手感；第 2–6 关的完整揭露、取证、结算尚未制作。</p>
+<script>
+const levels=[
+{title:'01 入住当天',sub:'海景公寓 301 · 空间、钥匙与交接',room:'level-01/room-underlayer.png',items:[
+['E01-curtain.png','帘后厕所',13,18,12,50],['E02-wardrobe-door.png','柜内折叠床',35,25,12,44],['E03-partition-door.png','客厅隔断',78,24,12,39],['E04-key-tag.png','备用钥匙争议',5,42,11,20],['E05-wallpaper-edge.png','墙面改漆',52,24,11,22],['E06-bin-lid.png','垃圾桶底',65,58,11,16]]},
+{title:'02 广告陷阱',sub:'样板间 · 图片与清单对照',room:'level-02/room.png',items:[
+['E07-handle-clock.png','时段门禁',10,31,14,24],['E08-listing-photo.png','修饰照片',42,24,16,24],['E09-socket-cover.png','封住插座',75,34,13,20],['E10-pawprint-rug.png','宠物痕迹',15,64,17,23],['E11-receipt-drawer.png','家具去向',45,59,17,22],['E12-stove-tray.png','虫害来源',75,60,14,22]]},
+{title:'03 生活痕迹',sub:'雨季旧屋 · 表面和底层',room:'level-03/room.png',items:[
+['E13-damp-painting.png','画后水痕',10,27,16,25],['E14-peeling-wall-sticker.png','旧霉遮盖',41,26,15,24],['E15-damp-rug.png','地毯下潮湿',76,28,14,24],['E16-smoky-curtain.png','隐蔽烟灰',12,62,15,24],['E17-fridge-drawer.png','冰箱异味',44,60,16,24],['E18-freezer-drawer.png','食物转移',75,60,16,24]]},
+{title:'04 隔间秘密',sub:'共享住房 · 两处物件关联',room:'level-04/room.png',items:[
+['E19-wired-plant.png','可疑线路',10,25,16,26],['E20-room-keycard.png','房卡与广告',42,28,14,21],['E21-sink-cabinet.png','阀门和污水',76,28,15,24],['E22-tv-cover.png','屏幕损坏',13,61,16,23],['E23-moved-furniture-rug.png','家具搬动',44,61,16,23],['E24-shared-fridge-door.png','冰箱挤占',75,60,16,24]]},
+{title:'05 退租前夜',sub:'空房交接 · 维修和扣款',room:'level-05/room.png',items:[
+['E25-gutter-basket.png','排水责任',10,27,16,25],['E26-candle-dome.png','未点燃蜡烛',42,26,16,25],['E27-invoice-stack.png','押金拖延',76,27,15,25],['E28-frosted-window-latch.png','冻管责任',12,62,16,23],['E29-pet-smell-rug.png','气味争议',43,61,17,25],['E30-cracked-fridge-shelf.png','旧裂痕误扣',76,60,16,24]]},
+{title:'06 最后账单',sub:'终局离房 · 多处证据交叉',room:'level-06/room.png',items:[
+['E31-mold-curtain.png','多处霉迹',9,22,17,30],['E32-ball-level.png','地板倾斜',42,29,16,21],['E33-deduction-stack.png','叠加扣款',75,26,16,25],['E34-meal-cupboard.png','遗留餐盒',10,61,17,24],['E35-loose-baseboard.png','修理费争议',42,61,17,24],['E36-doorstop-latch.png','外人闯入',76,61,16,25]]}
+];
+let current=0,role='tenant';const base='public/levels/';const tabs=document.getElementById('case-tabs'),stage=document.getElementById('stage'),toast=document.getElementById('toast');
+levels.forEach((level,index)=>{const button=document.createElement('button');button.textContent=level.title;button.type='button';button.onclick=()=>{current=index;render()};tabs.append(button)});
+for(const next of ['tenant','landlord'])document.getElementById(next).onclick=()=>{role=next;render()};
+function render(){const level=levels[current];document.getElementById('level-title').textContent=level.title;document.getElementById('level-subtitle').textContent=level.sub;document.getElementById('room').src=base+'level-'+String(current+1).padStart(2,'0')+'/'+level.room.split('/').at(-1);document.querySelectorAll('.case-tabs button').forEach((b,i)=>b.setAttribute('aria-selected',String(i===current)));for(const r of ['tenant','landlord'])document.getElementById(r).setAttribute('aria-pressed',String(r===role));stage.querySelectorAll('.prop').forEach(x=>x.remove());level.items.forEach(([file,label,x,y,w,h],index)=>{if((role==='tenant')!== (index<3))return;const b=document.createElement('button');b.className='prop';b.type='button';b.setAttribute('aria-label','拖动'+label);b.style.left=x+'%';b.style.top=y+'%';b.style.width=w+'%';b.style.height=h+'%';b.innerHTML='<img alt="" draggable="false" src="'+base+'level-'+String(current+1).padStart(2,'0')+'/'+file+'">';let start; b.onpointerdown=e=>{e.preventDefault();b.setPointerCapture(e.pointerId);start={x:e.clientX,y:e.clientY};b.classList.add('dragging')};b.onpointermove=e=>{if(!start)return;b.style.transform=`translate(${e.clientX-start.x}px,${e.clientY-start.y}px) rotate(-4deg)`};b.onpointerup=e=>{if(!start)return;const d=Math.hypot(e.clientX-start.x,e.clientY-start.y);b.classList.remove('dragging');if(d>25){b.classList.add('found');toast.textContent='发现线索：'+label+'。这是道具与拖动预览。'}else{b.style.transform=''}start=null};b.onpointercancel=()=>{start=null;b.classList.remove('dragging');b.style.transform=''};b.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();b.classList.add('found');toast.textContent='发现线索：'+label+'。这是道具与拖动预览。'}};stage.append(b)});toast.textContent='按住画中物件拖动，看看这关的案例道具。'}render();
+</script>
+</body></html>
+

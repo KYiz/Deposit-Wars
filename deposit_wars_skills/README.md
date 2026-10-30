@@ -35,3 +35,7 @@
 
 ## Skill 更新规则（v1.1）
 按需使用 `system-skills/skill-maintainer/SKILL.md`：只有证据证明需要更改才修改；默认输出最小补丁提案，涉及职责、审批权和阶段门等必须 CEO 批准。原 8 岗位与原 3 管理 Skills 在本版本均原样保留。
+# v1.3 策划专项 Skill
+
+`specialist-skills/rental-puzzle-designer/SKILL.md` 供游戏策划按需使用，把已核查的海外租房案例改编为房间中的可观察、可拖动、可取证谜题。首关实例见 `artifacts/design/TASK-014_DRAG_PUZZLES.md`；项目当前事实仍以 `shared/PROJECT_STATE.md` 为准。
+

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#191b32" />
+  <title>押金保卫战｜双视角找茬 Demo</title>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="返回原型首页"><span class="mark">D<span>W</span></span><span>DEPOSIT<br>WARS</span></a>
+      <div class="top-center">一间好房 <span class="asterisk">*</span> 两份真相</div>
+      <div class="build-label">PLAYABLE DEMO <span>第 1 关</span></div>
+    </header>
+    <main>
+      <section class="case-screen" id="case-screen" aria-label="选择身份，进入调查">
+        <div class="case-stage">
+          <img class="case-art" src="/case-file-reference.png" alt="" />
+          <div class="case-copy"><span>CASE FILE · 海景公寓 301室</span><h1>一间好房，<br>两份真相</h1><p>同一间房，你会相信谁？</p></div>
+          <div class="case-choice-row" role="group" aria-label="选择玩家身份">
+            <button class="case-role tenant" data-case-role="tenant" type="button" aria-pressed="false"><strong>我是租客</strong><span>找出广告与现场的矛盾，追回押金</span></button>
+            <button class="case-role landlord" data-case-role="landlord" type="button" aria-pressed="false"><strong>我是房东</strong><span>发现问题并整改，避免风险</span></button>
+          </div>
+          <button class="case-enter" id="case-enter" type="button" disabled>选择身份后进入现场 →</button>
+        </div>
+        <p class="case-note">选择身份后即可开始调查 · 虚构游戏场景 · <a href="./level-art-preview.html">体验九关物品栏与标注玩法 →</a></p>
+      </section>
+      <div id="investigation-screen" class="hidden">
+        <div class="investigation-wrap">
+          <header class="investigation-brand">
+            <div class="investigation-logo" aria-label="Deposit Wars"><span>D</span><span>W</span></div>
+            <span class="investigation-wordmark">DEPOSIT<br>WARS</span>
+            <strong>一间好房 <b>*</b> 两份真相</strong>
+            <span class="investigation-demo">PLAYABLE DEMO</span>
+            <span class="investigation-tagline">同一间房 · 不同的视角 · 不同的答案</span>
+          </header>
+          <section class="investigation-panel" aria-label="房间调查">
+            <div class="scene" id="scene">
+              <img class="investigation-art" src="/levels/level-01/room-underlayer.png" alt="温暖的公寓客厅；拖开独立物件寻找被遮住的现场线索" />
+              <div class="scene-hud" id="case-progress"><span id="role-tag">租客</span><span class="hud-divider">·</span><span id="progress-text" aria-label="证据进度">0/5</span><span class="hud-divider">·</span><span id="deposit-text">$0 / $500</span></div>
+              <p class="sr-only" id="role-description">选择身份后开始调查。</p>
+              <div class="scene-reveal-art reveal-loo" data-scene-reveal="D1" data-stage="1" aria-hidden="true"></div>
+              <div class="scene-reveal-art reveal-fungi" data-scene-reveal="D2" data-stage="1" aria-hidden="true"></div>
+              <div class="scene-reveal reveal-leak" data-scene-reveal="D2" data-stage="2" aria-hidden="true">≋</div>
+              <div class="scene-reveal-art reveal-bed" data-scene-reveal="D3" data-stage="1" aria-hidden="true"></div>
+              <div class="scene-reveal reveal-lock" data-scene-reveal="D4" data-stage="1" aria-hidden="true">🔒</div>
+              <img class="scene-reveal-art reveal-hours" data-scene-reveal="D4" data-stage="2" src="/investigation-d4-reveal.png" alt="" aria-hidden="true" />
+              <div class="scene-reveal-art reveal-candle" data-scene-reveal="D5" data-stage="1" aria-hidden="true"></div>
+              <div class="scene-reveal reveal-wick" data-scene-reveal="D5" data-stage="2" aria-hidden="true">✧</div>
+              <div class="scene-reveal reveal-clean" data-scene-reveal="D5" data-stage="3" aria-hidden="true">✓</div>
+              <button class="scene-object object-curtain" data-scene-object="D1" data-step="0" data-direction="right" aria-label="拖开厨房旁的粉色帘子" type="button"><img src="/levels/level-01/E01-curtain.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-frame" data-scene-object="D2" data-step="0" data-direction="up" aria-label="移开墙上的装饰画" type="button"><img src="/levels/level-01/D2-botanical-frame.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-leak" data-scene-object="D2" data-step="1" data-direction="down" aria-label="沿墙面水痕向下检查" type="button"><img src="/levels/level-01/D2-inspection-lens.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-closet" data-scene-object="D3" data-step="0" data-direction="right" aria-label="拉开木质橱柜门" type="button"><img src="/levels/level-01/E02-wardrobe-door.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-handle" data-scene-object="D4" data-step="0" data-direction="down" aria-label="向下拉右侧门把手" type="button"><img src="/levels/level-01/D4-door-handle.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-sign" data-scene-object="D4" data-step="1" data-direction="up" aria-label="翻开门旁的小牌子" type="button"><img src="/levels/level-01/D4-door-sign.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-dome" data-scene-object="D5" data-step="0" data-direction="up" aria-label="拿开茶几上的玻璃罩" type="button"><img src="/levels/level-01/D5-glass-dome.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-wick" data-scene-object="D5" data-step="1" data-direction="up" aria-label="检查茶几上蜡烛的烛芯" type="button"><img src="/levels/level-01/D5-unlit-candle.png" alt="" draggable="false" /></button>
+              <button class="scene-object object-cloth" data-scene-object="D5" data-step="2" data-direction="left" aria-label="用检查布擦看茶几表面" type="button"><img src="/levels/level-01/D5-cleaning-cloth.png" alt="" draggable="false" /></button>
+              <div class="scene-toast" id="scene-status" role="status">先看看房间，拖动可疑的物件。</div>
+              <div class="scene-toolbar"><button type="button" id="phone-button" aria-label="打开 Inspection Phone 查看证据">▣ <span id="phone-count">0</span></button><button type="button" id="face-button" aria-label="核对押金扣款">$</button><button type="button" id="hint-button" aria-label="获得提示">?</button><button type="button" id="switch-role" aria-label="切换视角">⇄</button></div>
+            </div>
+            <div class="quiet-options"><button type="button" id="sound-button" aria-pressed="true">♪ 声音开</button><button type="button" id="export-events">导出本地记录</button></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="modal hidden" id="modal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-head"><span id="modal-kicker"></span><button type="button" id="modal-close" aria-label="关闭">✕</button></div><div id="modal-content"></div></div></div>
+  <script type="module" src="/src/perspective-demo.ts"></script>
+</body>
+</html>

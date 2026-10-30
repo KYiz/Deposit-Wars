@@ -1,7 +1,12 @@
 node_modules/
 dist/
+game/dist-offline/
 .vite/
 .DS_Store
 *.log
+.env
+.env.*
+*.pem
+*.key
 game/test-output/
 deposit_wars_skills/artifacts/art/task-006/drafts/

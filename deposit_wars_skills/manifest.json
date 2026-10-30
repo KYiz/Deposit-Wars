@@ -1,6 +1,6 @@
 {
   "project": "Deposit Wars",
-  "version": "1.2.0",
+  "version": "1.6.0",
   "roles": [
     {
       "directory": "01-product-manager",
@@ -61,8 +61,13 @@
       "directory": "rental-case-researcher",
       "name": "Rental Case Researcher",
       "invoked_by": "产品经理 Product Manager"
+    },
+    {
+      "directory": "rental-puzzle-designer",
+      "name": "Rental Puzzle Designer",
+      "invoked_by": "游戏策划 Game Designer"
     }
   ],
-  "specialist_skill_count": 1,
-  "total_skill_count": 13
+  "specialist_skill_count": 2,
+  "total_skill_count": 14
 }
