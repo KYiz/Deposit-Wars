@@ -1,6 +1,6 @@
 # TASK-019：当前 G2 项目备份到 GitHub
 
-status: IN_PROGRESS
+status: DONE（Quality Gate ACCEPT；私有仓库远端已推送）
 stage: G2；仅源码与策划工件入库，不发布游戏
 DRI: 游戏程序员
 support: 项目经理（任务与状态）、QA（提交及远端核验）
@@ -21,7 +21,7 @@ date: 2026-10-30
 
 ## 验收
 
-- [ ] 待提交文件与体积、敏感信息经过检查；没有依赖目录、临时测试输出或凭据。
-- [ ] TASK-018 的 Demo、九关数据与美术、策划 Skill 和项目记录均纳入 Git 提交。
-- [ ] GitHub 私有仓库创建成功，远端分支指向本地提交；远端文件可核验。
-- [ ] 工作树干净，记录提交 SHA 和仓库链接；不声称游戏已上线。
+- [x] 待提交 222 文件约 130.38 MiB，最大 15.15 MiB；检查路径与文本，未纳入依赖、临时测试输出或凭据。
+- [x] TASK-018 的 Demo、九关数据与美术、策划 Skill 和项目记录已提交。
+- [x] `KYiz/Deposit-Wars` 私有仓库已创建；`main` 已推送，远端文件核验见 Quality Gate。
+- [x] 最终提交与工作树状态核验记录于 Quality Gate；仓库链接 `https://github.com/KYiz/Deposit-Wars`。游戏未上线。
