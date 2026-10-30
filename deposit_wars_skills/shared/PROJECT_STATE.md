@@ -1,14 +1,14 @@
 # Deposit Wars — 唯一项目状态源
 
-version: 2.4
+version: 2.5
 date: 2026-10-30
-status: G2_TASK-019_DONE_PRIVATE_GITHUB_BACKUP_WAITING_CEO_FEEDBACK
+status: G2_TASK-020_DONE_README_CLARIFIED_WAITING_CEO_FEEDBACK
 current_stage: G2 九关物品栏/标注机制演示已验收；正式逐关内容与 G3 未批准
 primary_owner: 项目经理 / 调度官（等待 CEO 对九关物品栏、标注与画风的反馈）
 orchestrator: 项目经理 / 工作流调度官
 ceo_approval_required: true
-current_task: TASK-019 DONE（当前 G2 项目已提交并推送至私有 GitHub 仓库；九关内容边界与 G3 状态不变）
-checkpoint: artifacts/handoffs/TASK-019.md
+current_task: TASK-020 DONE（GitHub 根 README 与 game README 已按当前九关方向重写；玩法与 G3 状态不变）
+checkpoint: artifacts/handoffs/TASK-020.md
 
 ## 已确认（来自 CEO 当前方向）
 - V1: 面向海外年轻租客/留学生的 2D 荒诞租房找茬互动小游戏。
@@ -52,9 +52,10 @@ checkpoint: artifacts/handoffs/TASK-019.md
 - 2026-10-28 CEO 进一步要求从案例物件设计独立 PNG，且每关道具与美术不同。TASK-017 为六关各做一张独立房间图和案例物件透明 PNG 草案：36 事件对应 83 张 PNG，当前 Demo 另有 8 张专用道具，共 91 张独立物件 PNG。首关改为揭露底图上叠独立 PNG，拖动时物件本身移动；六关美术互动预览在 `game/level-art-preview.html`，但后五关尚无完整揭露/取证/结算。美术岗位 Skill 升至 1.5.0。TypeScript/Vite/离线构建、4 项模型测试、Chrome `file://` 双身份鼠标/键盘与 390px 触控、六关图加载通过；旧 localhost 测试在本沙箱 `ERR_NETWORK_ACCESS_DENIED`，未声称通过。Quality Gate 对美术草案与首关接入 ACCEPT；真人体验、性能和 G3 未验收。
 - 2026-10-28 CEO 将方案改为九种住房/九关，要求固定尺寸但逐关增加开放格数的物品栏，正确物件入栏、点击真实问题区域标注计分，画风统一第一关。TASK-018 重排原 36 事件为每关两身份各 2 问题；生成九种不同住房的同风格房间图和并排检查图。`game/level-art-preview.html` 现跳转 `game/nine-level-demo.html`，可离线玩两视角的九关物品拾取/标注机制；开放格 `2,2,3,3,4,4,5,5,6`。Chrome `file://` 自动检查 18 条身份路线、36 个问题、68 个需收集物件实例、错配/干扰物不计分、390px 触控，旧模型4测和离线构建通过。设计/美术 Skill 升至 1.6.0，Quality Gate 对机制与草案 ACCEPT；专属揭露帧、Phone/押金结算、真人试玩和 G3 未完成。
 - 2026-10-30 CEO 明确要求上传当前工作到 GitHub。TASK-019 将截至九关 Demo 的源码、美术、案例策划 Skill 与项目工件提交并推送至 `KYiz/Deposit-Wars` **私有**仓库 `main`；保留远端自动生成的初始 README，补充仓库使用说明和忽略规则。Quality Gate 对仓库备份 ACCEPT。此举不等于 GitHub Pages、游戏上线、G3 或正式九关内容完成。
+- 2026-10-30 CEO 反馈 README 不清晰。TASK-020 重写根目录与 `game/README.md`，以九关主 Demo 为首要入口，明确旧单房间完整循环与九关机制草案的区别，给出下载 ZIP/克隆后本地打开、四步玩法、未完成范围和开发验证命令。链接/脚本/页面事实静态核对通过，Quality Gate 对文档 ACCEPT；玩法代码未改。
 
 ## 下一条动作与恢复
-当前 `game/nine-level-demo.html` 是九关同画风房间、物品栏与标注的离线玩法演示；`game/offline-demo.html` 是旧单房间完整取证/押金结算原型。私有仓库：`https://github.com/KYiz/Deposit-Wars`。下一步 CEO 体验九关物品栏与标注手感；若认可，再逐关补专属揭露、Phone 和押金结算，另行决定 G3。收到“继续项目”先读本文件和 `artifacts/handoffs/TASK-019.md`；TASK-001–019 已验收，无需重做。G3、正式九关内容量产、发布、付费服务/素材仍须相应 CEO 授权。
+当前 `game/nine-level-demo.html` 是九关同画风房间、物品栏与标注的离线玩法演示；`game/offline-demo.html` 是旧单房间完整取证/押金结算原型。私有仓库：`https://github.com/KYiz/Deposit-Wars`。下一步 CEO 查看更新的 README 并体验九关物品栏与标注手感；若认可，再逐关补专属揭露、Phone 和押金结算，另行决定 G3。收到“继续项目”先读本文件和 `artifacts/handoffs/TASK-020.md`；TASK-001–020 已验收，无需重做。G3、正式九关内容量产、发布、付费服务/素材仍须相应 CEO 授权。
 
 ## 决策日志索引
 见 artifacts/management/DECISIONS.md。未列入“已确认”的方案不得表述为正式批准。

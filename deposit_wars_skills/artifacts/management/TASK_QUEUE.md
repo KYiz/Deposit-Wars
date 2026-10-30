@@ -22,6 +22,7 @@
 | TASK-017 六关案例道具 PNG 与首关真实图层拖动 | DONE / ACCEPT（美术草案；后五关玩法未制作） | TASK-016 DONE + CEO 逐物件美术反馈 | `../handoffs/TASK-017.md` |
 | TASK-018 九种住房与物品栏/问题标注 | DONE / ACCEPT（九关机制演示；完整剧情/结算待做） | TASK-017 DONE + CEO 九关/卡槽/标注指令 | `../handoffs/TASK-018.md` |
 | TASK-019 当前 G2 项目上传 GitHub | DONE / ACCEPT（私有仓库备份；非游戏发布） | TASK-018 DONE + CEO 上传指令 | `../handoffs/TASK-019.md` |
+| TASK-020 GitHub README 清晰化 | DONE / ACCEPT（主 Demo、旧原型及未完成范围分明） | TASK-019 DONE + CEO README 反馈 | `../handoffs/TASK-020.md` |
 
 G2 首关保持不变；TASK-006 交付按 CEO 单独参考图 1/2/7 校准的三套视觉方案，每套正常/揭露/反击三幕。V1 规划目标为首发 6–8 房间、30–40 事件，但尚未获准扩展策划或量产。G3 8–12 人探索性试玩仍须 CEO 决议。
 

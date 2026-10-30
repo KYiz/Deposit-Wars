@@ -1,49 +1,43 @@
-# Deposit Wars — Sunny Side Studio playable prototype
+# 游戏原型：入口与开发说明
 
-## 新版双视角找茬 Demo
+项目首页见 [README](../README.md)。本目录同时保存**当前九关玩法 Demo**和**较早的单房间完整循环原型**；它们还没有合并成同一款九关游戏。
 
-运行 `pnpm dev` 后打开 `http://localhost:5173/perspective-demo.html`。先在 CASE FILE 首屏选租客或房东，再点“进入现场”。房间没有编号入口：直接拖开粉色帘子、移走墙画、拉开柜门、试右侧门锁、检查茶几物件。部分异常需连续检查；发现会在房间里显现并自动存入 Inspection Phone，最后核对扣款。手机可手指拖动并左右滑动查看房间；键盘可按 1–5 聚焦对应物件，再按 Enter 完成等效动作。拖错复位，扣款错配可重试，未取满证据可回房补查。可用 `pnpm test:perspective` 执行两视角的本地 Chrome 测试。此单房间演示是 TASK-015 的本地玩法迭代，未做玩家测试或正式发布。
+## 试玩入口
 
-**稳定离线入口：** 直接用浏览器打开同目录的 `offline-demo.html`，无需启动服务。源码更新后运行 `pnpm build:offline` 重新生成，再运行 `pnpm test:offline` 验证 `file://` 打开和基本交互。`level-art-preview.html` 现在进入 `nine-level-demo.html`：九种住房、固定尺寸物品栏、随关卡递增的开放卡槽、正确物件拾取和现场问题标注；36 个案例事件分配到九关。原六关美术预览备份为 `level-art-preview-v1.html`。九关页面是玩法演示，完整剧情与押金结算尚未整合。
+| 文件 | 用途 | 依赖 |
+| --- | --- | --- |
+| [`nine-level-demo.html`](nine-level-demo.html) | 当前主 Demo：九种住房、租客/房东、物件拾取入栏、选择线索后标注问题 | 保留 `src/`、`nine-level-data.js` 和 `public/` 的相对位置 |
+| [`offline-demo.html`](offline-demo.html) | 旧单房间原型：五处场景检查、Inspection Phone、扣款与证据匹配、虚构押金结算 | 图片与代码已内联，单个 HTML 可打开 |
+| [`perspective-demo.html`](perspective-demo.html) | 旧单房间版本的 Vite 开发入口 | 先运行开发服务器 |
 
-进入身份后的调查页使用 `public/levels/level-01/room-underlayer.png` 作为线索揭露层；进度、Phone、提示与切换视角缩到画面角落。首关现有九步交互的帘子、墙画、检查镜、柜门、门把、门牌、玻璃罩、蜡烛、擦拭布是独立透明 PNG，拖动时仅物件本身移动。原参考图和上一版干净底图保留在 `public/`，未覆盖。
+从 GitHub 下载 ZIP 并解压整个仓库，或克隆仓库；随后用浏览器打开上述本地 HTML 文件。`level-art-preview.html` 是指向九关 Demo 的旧地址，`level-art-preview-v1.html` 是旧六关美术预览档案。
 
-首关有 **五处场景内拖动谜题**：观察物件 → 直接拖动并揭露 → Phone 查看现场证据 → 五项扣款与证据匹配 → 虚构 `$500 / $500` 结算。至少拿到一张证据即可提前核对；错配不扣钱，部分结算可以回房补查。租客与房东共用房间和状态规则，房东线以自查与纠正扣款叙事。揭露图是本地原型素材；动画过渡和真实玩家理解度仍未验证。
+## 当前九关的操作
 
-G2 / TASK-004. English first. This is one fictional room with five case-inspired defects. It is a local prototype, not a published game or legal guide.
+选择关卡和租客/房东视角。在房间中拖动、点击或键盘选取物件；正确线索进入物品栏，干扰物不会。选中栏内线索，再点击对应的问题区域；某个问题所需物件收齐且线索匹配时才标注成功。每关每视角标出两处问题即可前进。页面允许自由选关，便于审核关卡草案。
 
-## Start
+九关数据由 `scripts/build-nine-level-data.py` 生成到 `nine-level-data.js`。场景图在 `public/nine-homes/`，独立案例道具 PNG 在 `public/levels/`。详细案例与房型映射见 [`TASK-018_NINE_LEVEL_SYSTEM.md`](../deposit_wars_skills/artifacts/design/TASK-018_NINE_LEVEL_SYSTEM.md)。
 
-Requires Node.js 24+ for the bundled TypeScript test command, and pnpm 11+. From this `game` directory:
+九关目前是**机制和房间美术演示**：逐案例揭露状态、Phone、押金结算尚未接入。旧单房间原型有这些完整流程，不能据此推断九关也已完成。
+
+## 修改源码与验证
+
+开发环境需要 Node.js 24+、pnpm 11+；从本目录执行：
 
 ```powershell
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open the local address printed by Vite (normally `http://localhost:5173/`). For a production build, run `pnpm build` then `pnpm preview`. Refresh the page to start a new run.
-
-## Play
-
-1. Tap the highlighted curtain beside the microwave. On a narrow phone, swipe the room sideways to see the closet and exit.
-2. Inspect each suspicious item. D2, D4 and D5 have more than one inspection step.
-3. Open the **Inspection Phone** to compare the fictional listing with the room, then record evidence. The phone is the only tool.
-4. Select **Face landlord**. Choose a charge and its matching evidence card. Wrong matches have no deposit penalty.
-5. If you finish with unresolved charges, select **Back to inspect** and continue. Five correct rebuttals return `$500 / $500` in this fictional scoring system.
-
-**Controls:** mouse click or touch; on keyboards press `1`–`5` to open room spots, `Esc` to close dialogs, and `Tab` to reach labeled buttons. **Hint** and sound toggle are under the room. The local playtest log export is in the footer. No events are sent to a server.
-
-## Verify
+Vite 会显示本地地址。需要调试旧单房间源码时打开该地址下的 `/perspective-demo.html`；当前九关也可直接通过本地 `file://` 打开。
 
 ```powershell
 pnpm typecheck
 pnpm test
 pnpm build
-pnpm test:browser
+node tests/task018-nine-level.mjs
+pnpm build:offline
+pnpm test:offline
 ```
 
-`test:browser` launches local Chrome or Edge. Set `BROWSER_PATH` to another Chromium executable if neither is at the common Windows path. It generates screenshots in ignored `test-output/`. The browser suite covers full desktop and emulated 390×844 touch playthrough, partial settlement recovery, refresh reset, and local event logging. Physical phones, Safari, Firefox, actual platform SDKs, and advertising are outside this G2 check.
-
-## Scope and provenance
-
-Design baseline: `../deposit_wars_skills/artifacts/design/LEVEL_001.md` and `GDD.md`. Source IDs RC-038/039/040/042/037 are traceability metadata; no source images, identities, addresses, or original text are shipped. The visual scene is programmatic placeholder art in Phaser and may be replaced later. G3 requires a separate CEO decision.
+`pnpm build:offline` 需要 Python，并重新生成 `offline-demo.html`。浏览器测试需要本机 Chrome 或 Edge；测试截图写入已忽略的 `test-output/`。上述命令是可用的验证入口，具体通过记录见各任务 Quality Gate；物理手机、Safari/Firefox、真人试玩和正式加载性能尚未验证。
